@@ -5,10 +5,10 @@
 }
 @font-face {
   font-family: titleFont;
-  src: url(/dist/font.ttf);
+  src: url(/font/font.ttf);
 }
 #content {
-  background-image: url(/dist/img/background.jpg);
+  background-image: url(img/background.jpg);
   background-size: cover;
   background-position: center;
 }

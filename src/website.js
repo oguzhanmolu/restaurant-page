@@ -7,7 +7,7 @@ function createHeader() {
   const logoText = document.createElement('h1');
   const logoGroup = document.createElement('div');
 
-  headerLogo.src = '/dist/img/logo.png';
+  headerLogo.src = 'img/logo.png';
   headerLogo.alt = 'Restaurant logo';
   logoText.textContent = `Kyoto's Harukaze`;
 
