@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: titleFont;
-  src: url(/font/font.ttf);
+  src: url(/dist/fonts/font.ttf);
 }
 #content {
   background-image: url(img/background.jpg);
