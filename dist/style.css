@@ -1,25 +1,23 @@
-@font-face {
-  font-family: titleFont;
-  src: url(/dist/font.ttf);
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+@font-face {
+  font-family: titleFont;
+  src: url(/dist/font.ttf);
 }
 #content {
   background-image: url(/dist/img/background.jpg);
   background-size: cover;
   background-position: center;
 }
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.9);
-  font-size: 25px;
+  background: rgba(0, 0, 0, 0.85);
   color: white;
 }
 .logo-group {
@@ -31,13 +29,25 @@ header {
   width: 150px;
 }
 .logo-text {
+  font-size: 2.5rem;
+  inline-size: 1px;
   margin: 10px 0 0 10px;
   font-family: 'titleFont';
 }
-.logo:hover {
+.logo:hover,
+.nav-button:hover {
   cursor: pointer;
 }
+.nav-button {
+  margin-right: 25px;
+  padding: 10px;
+  font-family: 'titleFont';
+  border-style: none;
+  font-size: 1.75rem;
+  background-color: transparent;
+  color: white;
+}
+/* Header end */
 .main {
   height: 85vh;
-  width: auto;
 }
