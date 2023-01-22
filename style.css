@@ -1,0 +1,43 @@
+@font-face {
+  font-family: titleFont;
+  src: url(/dist/font.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#content {
+  background-image: url(/dist/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 25px;
+  color: white;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 150px;
+  width: 150px;
+}
+.logo-text {
+  margin: 10px 0 0 10px;
+  font-family: 'titleFont';
+}
+.logo:hover {
+  cursor: pointer;
+}
+.main {
+  height: 85vh;
+  width: auto;
+}
