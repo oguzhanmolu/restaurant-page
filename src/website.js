@@ -52,10 +52,28 @@ function createMain() {
   main.classList.add('main');
   return main;
 }
+function createFooter() {
+  const footer = document.createElement('footer');
+  const githubIcon = document.createElement('i');
+  const githubLink = document.createElement('a');
+
+  githubLink.text = 'oguzhanmolu';
+  githubLink.href = 'https://github.com/oguzhanmolu';
+
+  footer.classList.add('footer');
+  githubIcon.classList.add('fa-brands');
+  githubIcon.classList.add('fa-github');
+
+  footer.appendChild(githubIcon);
+  footer.appendChild(githubLink);
+
+  return footer;
+}
 // Initialize page at the start
 function initializeFirstLoad() {
   const content = document.getElementById('content');
   content.appendChild(createHeader());
   content.appendChild(createMain());
+  content.appendChild(createFooter());
 }
 export default initializeFirstLoad;
