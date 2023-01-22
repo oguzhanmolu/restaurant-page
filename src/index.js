@@ -1,1 +1,2 @@
-console.log('test4');
+import initializeFirstLoad from './website';
+initializeFirstLoad();
