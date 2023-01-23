@@ -22,6 +22,7 @@ function createParagraph(text) {
 }
 function loadHome() {
   const main = document.getElementById('main');
+  main.textContent = '';
   main.appendChild(createHome());
   return main;
 }
