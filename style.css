@@ -122,3 +122,10 @@ header {
   height: 175px;
   width: 175px;
 }
+
+/* Contact */
+.map {
+  margin-top: 10px;
+  height: 600px;
+  width: 1000px;
+}
