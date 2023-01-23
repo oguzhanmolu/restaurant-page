@@ -3,7 +3,7 @@ function createHome() {
   const home = document.createElement('div');
   const homeLogo = document.createElement('img');
 
-  homeLogo.src = '/dist/img/home-logo.png';
+  homeLogo.src = 'img/home-logo.png';
   homeLogo.alt = 'Welcome home image';
   homeLogo.classList.add('home-logo');
 
