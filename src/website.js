@@ -1,3 +1,5 @@
+import loadHome from './home';
+
 // Create header
 function createHeader() {
   const header = document.createElement('header');
@@ -50,6 +52,7 @@ function createNavBar() {
 function createMain() {
   const main = document.createElement('main');
   main.classList.add('main');
+  main.setAttribute('id', 'main');
   return main;
 }
 function createFooter() {
@@ -77,5 +80,6 @@ function initializeFirstLoad() {
   content.appendChild(createHeader());
   content.appendChild(createMain());
   content.appendChild(createFooter());
+  loadHome();
 }
 export default initializeFirstLoad;
