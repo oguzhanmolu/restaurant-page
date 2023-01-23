@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
 }
 .logo-group {
@@ -63,9 +63,9 @@ header {
 
 .main {
   height: 750px;
-  width: 1250px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  width: 1500px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   text-align: center;
   font-size: 2rem;
@@ -79,7 +79,7 @@ header {
   height: 5vh;
   color: white;
   font-size: 1.4rem;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
 }
 .fa-github {
   font-size: 3rem;
@@ -88,3 +88,11 @@ header {
   margin-right: 5px;
 }
 /* Footer end */
+
+/* Home */
+.home-logo {
+  margin: 25px 0 25px 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
