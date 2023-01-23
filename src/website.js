@@ -56,16 +56,18 @@ function createFooter() {
   const footer = document.createElement('footer');
   const githubIcon = document.createElement('i');
   const githubLink = document.createElement('a');
+  const githubName = document.createElement('p');
 
-  githubLink.text = 'oguzhanmolu';
   githubLink.href = 'https://github.com/oguzhanmolu';
+  githubName.textContent = 'oguzhanmolu';
 
   footer.classList.add('footer');
   githubIcon.classList.add('fa-brands');
   githubIcon.classList.add('fa-github');
 
-  footer.appendChild(githubIcon);
+  githubLink.appendChild(githubIcon);
   footer.appendChild(githubLink);
+  footer.appendChild(githubName);
 
   return footer;
 }
