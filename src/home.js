@@ -1,8 +1,6 @@
 function createHome() {
   const home = document.createElement('div');
   const homeLogo = document.createElement('img');
-  const japaneseText = document.createElement('p');
-  const englishText = document.createElement('p');
 
   homeLogo.src = '/dist/img/home-logo.png';
   homeLogo.alt = 'Welcome home image';

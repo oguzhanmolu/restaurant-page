@@ -1,4 +1,5 @@
 import loadHome from './home';
+import loadMenu from './menu';
 
 // Create header
 function createHeader() {
@@ -30,19 +31,19 @@ function createNavBar() {
   const navBar = document.createElement('div');
 
   const btnHome = document.createElement('button');
-  const btnAboutUs = document.createElement('button');
+  const btnMenu = document.createElement('button');
   const btnContact = document.createElement('button');
 
   btnHome.textContent = 'Home';
-  btnAboutUs.textContent = 'About Us';
+  btnMenu.textContent = 'Menu';
   btnContact.textContent = 'Contact Us';
 
   btnHome.classList.add('nav-button');
-  btnAboutUs.classList.add('nav-button');
+  btnMenu.classList.add('nav-button');
   btnContact.classList.add('nav-button');
 
   navBar.appendChild(btnHome);
-  navBar.appendChild(btnAboutUs);
+  navBar.appendChild(btnMenu);
   navBar.appendChild(btnContact);
 
   // Event listeners for navbar clicks
@@ -52,9 +53,10 @@ function createNavBar() {
     setActiveButton(btnHome);
   });
 
-  btnAboutUs.addEventListener('click', (e) => {
+  btnMenu.addEventListener('click', (e) => {
     if (e.target.classList.contains('active-button')) return;
-    setActiveButton(btnAboutUs);
+    loadMenu();
+    setActiveButton(btnMenu);
   });
 
   btnContact.addEventListener('click', (e) => {
@@ -64,6 +66,7 @@ function createNavBar() {
 
   return navBar;
 }
+
 // Add bottom border for active navbar selection
 function setActiveButton(button) {
   const buttons = document.querySelectorAll('.nav-button');
@@ -82,6 +85,8 @@ function createMain() {
   main.setAttribute('id', 'main');
   return main;
 }
+
+// Create footer
 function createFooter() {
   const footer = document.createElement('footer');
   const githubIcon = document.createElement('i');
@@ -101,6 +106,7 @@ function createFooter() {
 
   return footer;
 }
+
 // Initialize page at the start
 function initializeFirstLoad() {
   const content = document.getElementById('content');
@@ -110,4 +116,5 @@ function initializeFirstLoad() {
   setActiveButton(document.querySelector('.nav-button'));
   loadHome();
 }
+
 export default initializeFirstLoad;
