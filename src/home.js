@@ -1,3 +1,4 @@
+// Create home
 function createHome() {
   const home = document.createElement('div');
   const homeLogo = document.createElement('img');
@@ -13,11 +14,14 @@ function createHome() {
   return home;
 }
 
+// Create text
 function createParagraph(text) {
   const para = document.createElement('p');
   para.textContent = text;
   return para;
 }
+
+// Load home on main
 function loadHome() {
   const main = document.getElementById('main');
   main.textContent = '';

@@ -1,3 +1,4 @@
+import loadContact from './contact';
 import loadHome from './home';
 import loadMenu from './menu';
 
@@ -61,6 +62,7 @@ function createNavBar() {
 
   btnContact.addEventListener('click', (e) => {
     if (e.target.classList.contains('active-button')) return;
+    loadContact();
     setActiveButton(btnContact);
   });
 
