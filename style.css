@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: title;
-  src: url(fonts/font.ttf);
+  src: url(dist/fonts/font.ttf);
 }
 
 #content {
