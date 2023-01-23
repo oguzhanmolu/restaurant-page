@@ -1,2 +1,2 @@
-import initializeFirstLoad from './website';
+import initializeFirstLoad from '/src/modules/website';
 initializeFirstLoad();
