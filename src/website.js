@@ -45,7 +45,34 @@ function createNavBar() {
   navBar.appendChild(btnAboutUs);
   navBar.appendChild(btnContact);
 
+  // Event listeners for navbar clicks
+  btnHome.addEventListener('click', (e) => {
+    loadHome();
+    if (e.target.classList.contains('active-button')) return;
+    setActiveButton(btnHome);
+  });
+
+  btnAboutUs.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active-button')) return;
+    setActiveButton(btnAboutUs);
+  });
+
+  btnContact.addEventListener('click', (e) => {
+    if (e.target.classList.contains('active-button')) return;
+    setActiveButton(btnContact);
+  });
+
   return navBar;
+}
+// Add bottom border for active navbar selection
+function setActiveButton(button) {
+  const buttons = document.querySelectorAll('.nav-button');
+  buttons.forEach((btn) => {
+    if (btn !== this) {
+      btn.classList.remove('active-button');
+    }
+  });
+  button.classList.add('active-button');
 }
 
 // Create main
@@ -80,6 +107,7 @@ function initializeFirstLoad() {
   content.appendChild(createHeader());
   content.appendChild(createMain());
   content.appendChild(createFooter());
+  setActiveButton(document.querySelector('.nav-button'));
   loadHome();
 }
 export default initializeFirstLoad;
