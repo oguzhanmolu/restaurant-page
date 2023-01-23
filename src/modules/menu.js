@@ -22,7 +22,7 @@ function createMenuItem(itemName, itemDescription) {
   const menuItemImg = document.createElement('img');
   const menuItemText = document.createElement('p');
 
-  menuItemImg.src = `img/${itemName}.png`;
+  menuItemImg.src = `dist/img/${itemName}.png`;
   menuItemImg.alt = `${itemName} photo as menu item`;
   menuItemText.textContent = itemDescription;
 
