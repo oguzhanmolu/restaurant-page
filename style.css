@@ -44,7 +44,7 @@ header {
 .logo-text {
   font-size: 2.5rem;
   inline-size: 1px;
-  margin: 10px 0 0 10px;
+  margin-left: 10px;
   font-family: 'title';
 }
 .logo:hover,
