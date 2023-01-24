@@ -1,17 +1,17 @@
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-
 @font-face {
   font-family: title;
   src: url(fonts/font.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Content */
 #content {
   height: 100vh;
   display: flex;
@@ -22,6 +22,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Header */
@@ -33,40 +34,47 @@ header {
   background: rgba(0, 0, 0, 0.9);
   color: white;
 }
+
 .logo-group {
   display: flex;
   align-items: center;
 }
+
 .logo {
   height: 150px;
   width: 150px;
 }
+
 .logo-text {
+  margin-left: 10px;
   font-size: 2.5rem;
   inline-size: 1px;
-  margin-left: 10px;
   font-family: 'title';
 }
+
 .logo:hover,
 .nav-button:hover,
 .fa-github:hover {
   cursor: pointer;
 }
+
 .nav-button {
   margin-right: 25px;
-  font-family: 'title';
-  border-style: none;
-  border-radius: 10px;
   padding: 15px;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  border-style: none;
   background-color: transparent;
   color: white;
+  font-size: 1.5rem;
+  font-family: 'title';
 }
+
 .nav-button:hover {
   background-color: white;
   color: black;
 }
 
+/* Main */
 .main {
   height: 750px;
   width: 1500px;
@@ -76,35 +84,30 @@ header {
   text-align: center;
   font-size: 1.75rem;
 }
+
 /* Footer */
 .footer {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
-  color: white;
-  font-size: 1.4rem;
+  width: 100%;
   background: rgba(0, 0, 0, 0.9);
-}
-.fa-github {
-  font-size: 3rem;
-  margin-left: 10px;
   color: white;
+  font-size: 1.5rem;
+}
+
+.fa-github {
   margin-right: 5px;
+  color: white;
+  font-size: 3rem;
 }
 
 /* Home */
 .home-logo {
-  margin: 50px 0 25px 0;
   height: 500px;
   width: 500px;
-  border-radius: 50%;
-}
-
-.active-button {
-  background-color: white;
-  color: black;
+  margin: 50px 0 25px 0;
+  border-radius: 10px;
 }
 
 /* Menu */
@@ -113,8 +116,9 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+
 .menu-group:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
   cursor: pointer;
 }
 
@@ -127,5 +131,10 @@ header {
 .map {
   margin-top: 10px;
   height: 600px;
-  width: 1000px;
+  width: 800px;
+}
+
+.active-button {
+  background-color: white;
+  color: black;
 }
