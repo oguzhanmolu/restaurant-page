@@ -1,3 +1,4 @@
+// Create contact and append elements
 function createContact() {
   const contact = document.createElement('div');
   const adressText = document.createElement('p');
@@ -22,7 +23,7 @@ function createContact() {
   return contact;
 }
 
-// Load contact on main
+// Append contact on main
 function loadContact() {
   const main = document.getElementById('main');
   main.textContent = '';

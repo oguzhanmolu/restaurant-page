@@ -1,4 +1,4 @@
-// Create the whole menu
+// Create and append menu items
 function createMenu() {
   const menu = document.createElement('div');
   menu.classList.add('menu-main');
@@ -16,25 +16,25 @@ function createMenu() {
   return menu;
 }
 
-// Create menu items
+// Function for creating single menu item
 function createMenuItem(itemName, itemDescription) {
   const menuItemGroup = document.createElement('div');
-  const menuItemImg = document.createElement('img');
-  const menuItemText = document.createElement('p');
-
-  menuItemImg.src = `img/${itemName}.png`;
-  menuItemImg.alt = `${itemName} photo as menu item`;
-  menuItemText.textContent = itemDescription;
-
-  menuItemImg.classList.add('menu-img');
   menuItemGroup.classList.add('menu-group');
 
+  const menuItemImg = document.createElement('img');
+  menuItemImg.src = `img/${itemName}.png`;
+  menuItemImg.alt = `${itemName} photo as menu item`;
+  menuItemImg.classList.add('menu-img');
   menuItemGroup.appendChild(menuItemImg);
+
+  const menuItemText = document.createElement('p');
+  menuItemText.textContent = itemDescription;
   menuItemGroup.appendChild(menuItemText);
+
   return menuItemGroup;
 }
 
-// Load menu on main
+// Append menu on main
 function loadMenu() {
   const main = document.getElementById('main');
   main.textContent = '';
